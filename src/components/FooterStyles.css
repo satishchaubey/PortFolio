@@ -50,6 +50,14 @@ p{
 .email{
     display: flex;
 }
+@media (min-width:50px) and (max-width:425px) {
+    .footer-container{
+        grid-template-columns: 1fr;
+    }
+    .discription_footer{
+        font-size: 1rem;
+    }
+}
 
 @media screen and (max-width:640px) {
     .footer-container{
