@@ -2,6 +2,9 @@
     text-align: center;
     padding: 4rem 0 2rem 0;
 }
+.work-container{
+    background-color:rgb(112, 124, 177) ;
+}
 .project-container{
     max-width: 1140px;
     margin: auto;
@@ -11,8 +14,10 @@
     padding-bottom: 5rem;
 }
 .project-card{
-    background-color: #1a1919;
+    background-color: rgb(14, 34, 123);
     padding: 1.2rem 1rem;
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 26px;
 }
 .project-card img{
     width: 100%;
@@ -29,8 +34,14 @@
 
 .project-btn{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     padding: 0.5rem 0;
+}
+.btn_border{
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
 }
 .project-btn .btn{
     padding: 0.5rem 1rem;

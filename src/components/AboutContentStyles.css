@@ -1,11 +1,12 @@
 .about {
   width: 100%;
-  margin: 3rem 0;
+  /* margin: 3rem 0; */
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   height: 100%;
+  background-color: rgb(112, 124, 177) ;
 }
 
 .about .left {
@@ -31,6 +32,9 @@
 .right .img {
   max-width: 90%;
   border: 1px solid #333;
+  border-bottom-left-radius: 28px;
+  border-top-right-radius: 28px;
+
 }
 
 .right .top {

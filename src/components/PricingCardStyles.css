@@ -1,7 +1,7 @@
 .pricing{
     width: 100%;
     padding: 6rem 1rem;
-    background-color: black;
+    background-color: rgb(14, 34, 123);
 }
 
 .card-container{
@@ -16,9 +16,11 @@
     color: #eee;
     text-align: center;
     padding: 1rem;
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 26px;
 }
 .card:hover{
-    background-color: #141414;
+    background-color: rgb(32, 22, 70);
 
 }
 .card h3{

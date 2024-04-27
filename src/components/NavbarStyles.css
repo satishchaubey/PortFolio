@@ -27,7 +27,11 @@
 .hamburger{
     display: none;
 }
-
+@media screen and (max-width:768px) {
+  .header{
+    height: 60px;
+  }
+}
 
 @media screen and (max-width:1040px) {
     .nav-menu{

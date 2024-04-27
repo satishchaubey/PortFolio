@@ -7,10 +7,14 @@ import {
   FaMailBulk,
   FaPhone,
   FaTwitter,
+  FaInstagram,
+  FaWhatsapp,
 } from "react-icons/fa";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Description from "./Description";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const { ref, inView } = useInView({
@@ -77,14 +81,15 @@ const Footer = () => {
                 size={20}
                 className="discription_footer"
               />
-              <h4 className="discription_footer">8299805407</h4>
+              {/* For calling, use the tel protocol */}
+              <a href="tel:+918299805407" className="discription_footer">8299805407</a>
             </div>
             <div className="email">
               <FaMailBulk
                 style={{ color: "white", marginRight: "2rem", marginTop: "0.3rem" }}
                 size={20}
               />
-              <h4 className="discription_footer">satishchaubey02@gmail.com</h4>
+              <a href="mailto:satishchaubey02@gmail.com" className="discription_footer">satishchaubey02@gmail.com</a>
             </div>
           </div>
           <div className="right">
@@ -109,14 +114,31 @@ const Footer = () => {
               animate={isVisible ? { opacity: 1 } : {}}
               transition={{ duration: 3, delay: 0.6 }}
             >
-              <FaFacebook style={{ color: "white", marginRight: "1rem" }} size={30} />
-              <FaTwitter style={{ color: "white", marginRight: "1rem" }} size={30} />
-              <FaLinkedin style={{ color: "white", marginRight: "1rem" }} size={30} />
-              <FaGithub style={{ color: "white", marginRight: "1rem" }} size={30} />
+              {/* Social media links */}
+              <a href="https://www.facebook.com/cyrus.chaubey?mibextid=ZbWKwL">
+                <FaFacebook style={{ color: "white", marginRight: "1rem" }} size={30} />
+              </a>
+              <a href="https://x.com/satish659712?t=tijJjMMHaEE4vdMPZXr6Ew&s=08">
+                <FaTwitter style={{ color: "white", marginRight: "1rem" }} size={30} />
+              </a>
+              <a href="https://www.linkedin.com/in/satish-chaubey-381930171/">
+                <FaLinkedin style={{ color: "white", marginRight: "1rem" }} size={30} />
+              </a>
+              <a href="https://github.com/satishchaubey/PortFolio">
+                <FaGithub style={{ color: "white", marginRight: "1rem" }} size={30} />
+              </a>
+              <a href="https://www.instagram.com/__.cyrus25.__?igsh=MWxwb2dzZTI0MW9pMw==">
+                <FaInstagram style={{ color: "white", marginRight: "1rem" }} size={30} />
+              </a>
+              {/* WhatsApp */}
+              <a href="https://wa.me/8299805407">
+                <FaWhatsapp style={{ color: "white", marginRight: "1rem" }} size={30} />
+              </a>
             </motion.div>
           </div>
         </div>
       </motion.div>
+      <Description/>
     </div>
   );
 };
